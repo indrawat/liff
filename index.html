@@ -42,7 +42,7 @@
     console.log("Hello World!")
   </script> -->
 
-  <!-- <script src="https://static.line-scdn.net/liff/edge/versions/2.8.1/sdk.js"></script> -->
+  <script src="https://static.line-scdn.net/liff/edge/versions/2.8.1/sdk.js"></script> -->
   <script>
     function createUniversalLink() {
     }
@@ -75,12 +75,17 @@
     }
 
     function getEnvironment() {
+      document.getElementById("os").append(liff.getOS())
+
+
     }
 
     async function main() {
-      alert("LINE Developers x Skooldio")
-      await liff.init({ liffId: "YOUR-LIFF-ID" })
-      // getEnvironment()
+      alert("For Sale PTG")
+      await liff.init({ liffId: "1655776248-nQN3261x" })
+      getEnvironment()
+
+
       // getUserProfile()
       // getContext()
       // getFriendship()
