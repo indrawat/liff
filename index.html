@@ -68,7 +68,7 @@
     async function sendMsg() {
     // Send messages here.
     //if (liff.getContext().type !== "none" ) {
-        await liff.sendMessage([
+        await liff.sendMessages([ 
         {
           "type": "text",
           "text": "Hello"
@@ -110,7 +110,7 @@
     }
 
     async function main() {
-      alert("Update")
+      alert("Update555")
       await liff.init({ liffId: "1655776248-nQN3261x" })
        getEnvironment()
        getUserProfile()
