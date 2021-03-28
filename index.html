@@ -67,17 +67,14 @@
 
     async function sendMsg() {
     // Send messages here.
-    if (liff.getContext().type !== "none" ) {
+    //if (liff.getContext().type !== "none" ) {
         await lift.sendMessage([
         {
-          
- 
           "type": "text",
           "text": "Hello"
-
         }
         ])
-                                            }
+  //                                          }
                             }
 
 
@@ -113,7 +110,7 @@
     }
 
     async function main() {
-      alert("Update1")
+      alert("Update2")
       await liff.init({ liffId: "1655776248-nQN3261x" })
        getEnvironment()
        getUserProfile()
