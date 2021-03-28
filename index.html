@@ -66,6 +66,28 @@
     }
 
     async function sendMsg() {
+      if (liff.getContext().type !== "none" ) {
+        await lift.sendMessage([
+          {
+            "type" : "sticker",
+            "stickerId": 1,
+            "packageId": 1
+
+          }
+
+        ])
+
+
+
+
+
+    // Send messages here.
+    }
+
+
+
+
+
     }
 
     function getContext() {
@@ -100,7 +122,7 @@
     }
 
     async function main() {
-      alert("Update4 ")
+      alert("Update5 ")
       await liff.init({ liffId: "1655776248-nQN3261x" })
        getEnvironment()
        getUserProfile()
