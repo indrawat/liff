@@ -77,8 +77,10 @@
 
         }
         ])
-  }
-  
+                                            }
+                            }
+
+
   function getContext() {
       document.getElementById("type").append(liff.getContext().type)
       document.getElementById("viewType").append(liff.getContext().viewType)
@@ -111,7 +113,7 @@
     }
 
     async function main() {
-      alert("Update_ANN")
+      alert("Update1")
       await liff.init({ liffId: "1655776248-nQN3261x" })
        getEnvironment()
        getUserProfile()
