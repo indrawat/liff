@@ -71,9 +71,11 @@
     function getContext() {
       document.getElementById("type").append(liff.getContext().type)
       document.getElementById("viewType").append(liff.getContext().viewType)
-      document.getElementById("utouTd").append(liff.getContext().utouId)
+      document.getElementById("utouId").append(liff.getContext().utouId)
       document.getElementById("roomId").append(liff.getContext().roomId)
       document.getElementById("groupId").append(liff.getContext().groupId)
+
+      document.getElementById("roomId").append(liff.getContext().roomId)
 
     }
 
@@ -98,7 +100,7 @@
     }
 
     async function main() {
-      alert("Update3 ")
+      alert("Update4 ")
       await liff.init({ liffId: "1655776248-nQN3261x" })
        getEnvironment()
        getUserProfile()
