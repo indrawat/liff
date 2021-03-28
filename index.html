@@ -66,67 +66,20 @@
     }
 
     async function sendMsg() {
-      if (liff.getContext().type !== "none" ) {
+    // Send messages here.
+    if (liff.getContext().type !== "none" ) {
         await lift.sendMessage([
         {
-  "type": "template",
-  "altText": "this is a carousel template",
-  "template": {
-    "type": "carousel",
-    "columns": [
-      {
-        "title": "Title",
-        "text": "Text",
-        "actions": [
-          {
-            "type": "message",
-            "label": "Action 1",
-            "text": "Action 1"
-          },
-          {
-            "type": "message",
-            "label": "Action 2",
-            "text": "Action 2"
-          }
-        ]
-      },
-      {
-        "title": "Title",
-        "text": "Text",
-        "actions": [
-          {
-            "type": "message",
-            "label": "Action 1",
-            "text": "Action 1"
-          },
-          {
-            "type": "message",
-            "label": "Action 2",
-            "text": "Action 2"
-          }
-        ]
-      }
-    ]
-  }
-}
+          
+ 
+          "type": "text",
+          "text": "Hello"
 
-
+        }
         ])
-
-sendMsg
-
-
-
-    // Send messages here.
-    }
-
-
-
-
-
-    }
-
-    function getContext() {
+  }
+  
+  function getContext() {
       document.getElementById("type").append(liff.getContext().type)
       document.getElementById("viewType").append(liff.getContext().viewType)
       document.getElementById("utouId").append(liff.getContext().utouId)
@@ -158,7 +111,7 @@ sendMsg
     }
 
     async function main() {
-      alert("Update6 ")
+      alert("Update_ANN")
       await liff.init({ liffId: "1655776248-nQN3261x" })
        getEnvironment()
        getUserProfile()
