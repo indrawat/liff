@@ -67,52 +67,19 @@
 
     async function sendMsg() {
     // Send messages here.
-    //if (liff.getContext().type !== "none" ) {
+    if (liff.getContext().type !== "none" ) 
+    {
         await liff.sendMessages([ 
-        {
-          "type": "template",
-  "altText": "this is a carousel template",
-  "template": {
-    "type": "carousel",
-    "columns": [
-      {
-        "title": "Title",
-        "text": "Text",
-        "actions": [
-          {
-            "type": "message",
-            "label": "Action 1",
-            "text": "Action 1"
-          },
-          {
-            "type": "message",
-            "label": "Action 2",
-            "text": "Action 2"
-          }
-        ]
-      },
-      {
-        "title": "Title",
-        "text": "Text",
-        "actions": [
-          {
-            "type": "message",
-            "label": "Action 1",
-            "text": "Action 1"
-          },
-          {
-            "type": "message",
-            "label": "Action 2",
-            "text": "Action 2"
-          }
-        ]
-      }
-    ]
-  }
-        }
+    {
+    "type": "location",
+    "latitude": 35.65910807942215,
+    "longitude": 139.70372892916203
+    }
+
+      
         ])
-  //                                          }
-                            }
+    }
+    }
 
 
   function getContext() {
