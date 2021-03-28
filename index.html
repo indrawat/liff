@@ -70,8 +70,45 @@
     //if (liff.getContext().type !== "none" ) {
         await liff.sendMessages([ 
         {
-          "type": "text",
-          "text": "Hello"
+          "type": "template",
+  "altText": "this is a carousel template",
+  "template": {
+    "type": "carousel",
+    "columns": [
+      {
+        "title": "Title",
+        "text": "Text",
+        "actions": [
+          {
+            "type": "message",
+            "label": "Action 1",
+            "text": "Action 1"
+          },
+          {
+            "type": "message",
+            "label": "Action 2",
+            "text": "Action 2"
+          }
+        ]
+      },
+      {
+        "title": "Title",
+        "text": "Text",
+        "actions": [
+          {
+            "type": "message",
+            "label": "Action 1",
+            "text": "Action 1"
+          },
+          {
+            "type": "message",
+            "label": "Action 2",
+            "text": "Action 2"
+          }
+        ]
+      }
+    ]
+  }
         }
         ])
   //                                          }
@@ -110,7 +147,7 @@
     }
 
     async function main() {
-      alert("Update555")
+      alert("Update")
       await liff.init({ liffId: "1655776248-nQN3261x" })
        getEnvironment()
        getUserProfile()
